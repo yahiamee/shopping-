@@ -1,0 +1,45 @@
+<ion-view title="التسجيل">
+    <ion-content padding="'true'" scroll="false" class="has-header">
+        <form class="list" dir="rtl">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">الاسم</span>
+                    <input type="text" placeholder="" ng-model="data.name">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">البريد </span>
+                    <input type="email" placeholder="" ng-model="data.username">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">كلمة المرور</span>
+                    <input type="password" placeholder="" ng-model="data.password">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">الهاتف</span>
+                    <input type="number" placeholder="" ng-model="data.phone">
+                </label>
+				
+				<label class="item item-input">
+                    <span class="input-label"> الولاية</span>
+                    <select>
+					
+				<option value=""> الخرطوم</option>
+				<option value=""> نهر النيل</option>
+				<option value=""> الشمالية</option>
+				<option value="">مدني </option>
+				</select>
+                </label>
+				
+            </ion-list>
+            <label class="item item-input">
+                <span class="input-label">العنوان</span>
+                <input type="text" placeholder="" ng-model="data.address">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">الرقم الوطني</span>
+                <input type="number" placeholder="" ng-model="data.pincode">
+            </label>
+            <button ng-click="signup(data)" class="button button-stable button-block ">تسجيل</button>
+        </form>
+    </ion-content>
+</ion-view>

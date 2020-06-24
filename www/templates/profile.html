@@ -1,0 +1,57 @@
+<ion-view title="الملف الشخصي">
+    <ion-content padding="'true'" class="has-header">
+	
+		
+		
+
+		
+
+		
+
+        
+		<ion-list dir="rtl">
+            
+			<ion-item class="item-divider">الملف الشخصي</ion-item>
+			
+			
+			<label class="item item-input">
+                <span class="input-label">الاسم</span>
+				<textarea placeholder="" readonly> {{" "+loggedin_name}}</textarea>
+            </label>
+			
+			<label class="item item-input">
+                <span class="input-label">البريد</span>
+				<textarea placeholder="" readonly>{{" "+loggedin_id}} </textarea>
+            </label>
+
+			<label class="item item-input">
+                <span class="input-label">الهاتف</span>
+				<textarea placeholder="" readonly > {{" "+loggedin_phone}}</textarea>
+            </label>
+	
+            
+            <label class="item item-input">
+                <span class="input-label">العنوان</span>
+				<textarea placeholder="" readonly > {{" "+loggedin_address}}</textarea>
+            </label>
+			
+            <label class="item item-input">
+                <span class="input-label">الرقم الوطني</span>
+                <textarea placeholder="" readonly > {{" "+loggedin_pincode}}</textarea>
+            </label>
+			
+		
+		<div class="button-bar">
+            <a href="#/page10" class="button button-stable button-block  icon ion-android-alarm-clock"></a>
+            <a href="#/page11" class="button button-stable button-block  icon ion-edit"></a>
+            <a href="#/page12" class="button button-stable button-block  icon ion-android-favorite"></a>
+        </div>
+		
+			<button ng-click="logout()" class="button button-balanced button-block  icon-left ion-log-out">تسجيل الخروج</button>
+			
+			<a href="tel:0993418701" class="button button-calm button-block  icon-left ion-android-call">اتصل بنا</a>
+			
+	        </ion-list>
+        
+    </ion-content>
+</ion-view>
